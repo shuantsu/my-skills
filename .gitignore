@@ -1,0 +1,20 @@
+# Nunca versionar segredos — eles vivem FORA deste repo em /root/:
+#   /root/ftp_credentials.txt     (host, user, password, origin, ignore, site)
+#   /root/email_credentials.txt   (account, email, display_name, imap_server, smtp_server)
+#   /root/.env                    (TELEGRAM_BOT_TOKEN, ALLOWED_USERS)
+#   /root/.config/himalaya/config.toml
+#   /root/whatsapp/aliases.json
+#
+# Este arquivo é só uma rede de segurança; mantenha os segredos fora da árvore.
+.env
+.env.*
+*credentials*
+*.local.*
+*.secret*
+*.pem
+*.key
+__pycache__/
+*.pyc
+*.bak
+.ftprules
+.ftp_cache.json
