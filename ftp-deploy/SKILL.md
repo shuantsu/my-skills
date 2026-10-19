@@ -11,6 +11,11 @@ Deploy project folders to FTP using `ftp_deploy.py` (stdlib-only, incremental vi
 
 - Script: `/usr/local/lib/node_modules/@artickc/opencode-telegram-bot/ftp_deploy/ftp_deploy.py`
 - Invoke: `python3 /usr/local/lib/node_modules/@artickc/opencode-telegram-bot/ftp_deploy/ftp_deploy.py <flags>` with `workdir` = project root
+- Se o script **não existir** no ambiente, faça o clone na pasta apropriada antes de usar:
+
+```bash
+git clone https://github.com/shuantsu/ftp_deploy /usr/local/lib/node_modules/@artickc/opencode-telegram-bot/ftp_deploy
+```
 - Credenciais: `/root/ftp_credentials.txt` — `key=value`, campos `host`, `user`,
   `password`, `origin`, `ignore`, `site`. **Fora de qualquer repo** (gitignorado), chmod 600.
 - Helper (leia os campos daqui; **nunca** os copie para SKILL.md, exemplos ou chat):
